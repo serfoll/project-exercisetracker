@@ -23,7 +23,7 @@ router.route("/").post((req, res) => {
 });
 
 //add new exercise
-router.route("/:id/exercises").post((req, res) => {
+router.route("/:_id/exercises").post((req, res) => {
   let { ":_id": id, description: desc, duration: durr, date: date } = req.body;
   //handle empty date
   if (!date) {
