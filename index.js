@@ -40,11 +40,14 @@ mongoose
 
     //start server after connection to DB successful
     app.listen(port, () => {
+      console.clear();
       console.log(`Listening on port ${port}`);
     });
   });
 
 //import routes
 const usersRoute = require("./backend/routes/users");
+const exercisesRoute = require("./backend/routes/exercises");
 
 app.use("/api/users", usersRoute);
+app.use("/api/users", exercisesRoute);
