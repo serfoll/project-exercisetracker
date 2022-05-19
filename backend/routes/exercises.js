@@ -4,9 +4,9 @@ let Exercise = require("../models/exercise.model");
 let User = require("../models/user.model");
 
 //add new exercise
-router.route("/:id/exercises").post((req, res) => {
-  let id = req.params.id;
-  let {description, duration, date } = req.body;
+router.route("/:_id/exercises").post((req, res) => {
+  let id = req.params._id;
+  let { description, duration, date } = req.body;
   //handle empty date
   if (!date) {
     date = new Date(Date.now());
