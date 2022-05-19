@@ -46,7 +46,5 @@ mongoose
 
 //import routes
 const usersRoute = require("./backend/routes/users");
-const exercisesRoute = require("./backend/routes/exercises");
-const logsRoute = require("./backend/routes/logs");
 
 app.use("/api/users", usersRoute);
