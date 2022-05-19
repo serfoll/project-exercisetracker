@@ -6,6 +6,7 @@ const { Schema, default: mongoose, mongo } = require("mongoose");
 const userSchema = new Schema(
   {
     username: { type: String, required: true, unique: true, trim: true },
+    exercises: [{}],
   },
   { timestamps: true }
 );
