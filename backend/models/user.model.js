@@ -12,13 +12,6 @@ const { Schema, default: mongoose, mongo } = require("mongoose");
 const userSchema = new Schema(
   {
     username: { type: String, required: true, unique: true, trim: true },
-    exercises: [
-      {
-        duration: { type: Number },
-        description: { type: String },
-        date: { type: Date },
-      },
-    ],
   },
   { timestamps: true }
 );
